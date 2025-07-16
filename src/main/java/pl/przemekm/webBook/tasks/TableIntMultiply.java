@@ -1,6 +1,6 @@
 package pl.przemekm.webBook.tasks;
 
-public class classtest {
+public class TableIntMultiply {
 
     //Product Of Array Except Self : Give an array of distinct integers n>1,
     //return an array output in such a way that a[i] is equals to the product of other elements except self i.e., a[i]
@@ -17,13 +17,13 @@ public class classtest {
 
     int[] i = {1,2,3,4};
 
-    int[] test(int[] input){
+     static int[] test(int[] input){
         int[] output = {0,0,0,0};
         int result;
         for(int i=0; i<input.length ; i++){
-            result = input[i];
-            for(j=0;j<input.length; j++){
-                if(j!=i){result = result* input[j];}
+            result = 1;
+            for(int j=0;j<input.length; j++){
+                if(j!=i){result = result * input[j];}
             }
             output[i] = result;
         }
