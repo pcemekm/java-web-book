@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS tickets (
+    id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(200) NOT NULL
+);
+
